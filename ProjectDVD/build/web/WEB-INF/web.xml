@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>ShoppingServlet</servlet-name>
+        <servlet-class>controller.ShoppingServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddToCartController</servlet-name>
+        <servlet-class>controller.AddToCartController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RemoveToCartController</servlet-name>
+        <servlet-class>controller.RemoveToCartController</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CheckOutController</servlet-name>
+        <servlet-class>controller.CheckOutController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShoppingServlet</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddToCartController</servlet-name>
+        <url-pattern>/AddToCartController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RemoveToCartController</servlet-name>
+        <url-pattern>/RemoveToCartController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckOutController</servlet-name>
+        <url-pattern>/CheckOutController</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
